@@ -1,0 +1,21 @@
+ul {
+    list-style: none;
+    display: flex;
+
+    @media screen
+    and (min-width: 1200px)
+    and (max-width: 1600px) {
+        justify-content: flex-end;
+        flex-direction: row;
+        li {
+            padding-left: 5em;
+        }
+    }
+
+    @media screen
+    and (min-width: 320px)
+    and (max-width: 640px) {
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+}
