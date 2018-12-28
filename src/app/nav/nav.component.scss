@@ -3,7 +3,7 @@ ul {
     display: flex;
 
     @media screen
-    and (min-width: 1200px)
+    and (min-width: 748px)
     and (max-width: 1600px) {
         justify-content: flex-end;
         flex-direction: row;
