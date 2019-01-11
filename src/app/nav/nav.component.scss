@@ -1,3 +1,7 @@
+.display-block {
+    display: block;
+}
+
 ul {
     font-family: 'IBM Plex Sans', sans-serif;
     list-style: none;
@@ -29,5 +33,9 @@ ul {
     and (max-width: 640px) {
         justify-content: flex-end;
         flex-direction: column;
+
+        li {
+            display: none;
+        }
     }
 }
