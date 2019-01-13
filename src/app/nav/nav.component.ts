@@ -8,7 +8,7 @@ import { HammerGestureConfig } from '@angular/platform-browser';
 })
 export class NavComponent implements OnInit {
     @ViewChild('navList') navList;
-    public showList = false;
+    public menuIsActive = false;
 
     constructor() {
     }
@@ -16,9 +16,7 @@ export class NavComponent implements OnInit {
     ngOnInit(): void {
     }
 
-    showNavigation() {
-        // console.log(this.navList.nativeElement.children);
-        this.showList = !this.showList ? true : false;
-        console.log(this.showList);
+    toggleMenu() {
+        this.menuIsActive = !this.menuIsActive ? true : false;
     }
 }

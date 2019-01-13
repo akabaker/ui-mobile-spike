@@ -1,17 +1,17 @@
 <nav>
     <div class="hamburger">
-        <a href="javascript:void(0);" (click)="showNavigation()">
+        <a href="javascript:void(0);" (click)="toggleMenu()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
     <ul>
-        <li [class.display-block]="showList">
+        <li [class.display-block]="menuIsActive">
             <a href="#">Home</a>
         </li>
-        <li [class.display-block]="showList">
+        <li [class.display-block]="menuIsActive">
             <a href="#">About</a>
         </li>
-        <li [class.display-block]="showList">
+        <li [class.display-block]="menuIsActive">
             <a href="#">Contact</a>
         </li>
     </ul>

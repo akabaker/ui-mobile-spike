@@ -1,11 +1,12 @@
 .display-block {
-    display: block !important;
+    display: block;
 }
 
 ul {
     font-family: 'IBM Plex Sans', sans-serif;
     list-style: none;
     display: flex;
+    justify-content: flex-end;
 
     a {
         text-decoration: none;
@@ -15,38 +16,36 @@ ul {
     a:hover {
         border-bottom: 4px solid black;
     }
-
-    @media screen
-    and (min-width: 748px) {
-        justify-content: flex-end;
-        flex-direction: row;
-        li {
-            padding-left: 5em;
-        }
-        li:last-child {
-            padding-right: 5em;
-        }
-    }
-
-    @media screen and (max-width: 748px) {
-        justify-content: flex-end;
-        flex-direction: column;
-
-        li {
-            display: none;
-        }
-    }
 }
 
-@media screen
-and (min-width: 748px) {
+@media screen and (min-width: 748px) {
     .hamburger {
         display: none;
     }
 
+    ul {
+        flex-direction: row;
+    }
+
+    li {
+        padding-left: 5em;
+    }
+    li:last-child {
+        padding-right: 5em;
+    }
+
 }
+
 @media screen and (max-width: 748px) {
     .hamburger {
         display: block;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        display: none;
     }
 }
