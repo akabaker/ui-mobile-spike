@@ -1,18 +1,18 @@
 <nav>
-    <ul #navList id="nav-list">
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">About</a>
-        </li>
-        <li>
-            <a href="#">Contact</a>
-        </li>
-    </ul>
-    <div>
-        <a href="javascript:void(0);" class="nav-hamburger" (click)="showNavigation()">
+    <div class="hamburger">
+        <a href="javascript:void(0);" (click)="showNavigation()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
+    <ul>
+        <li [class.display-block]="showList">
+            <a href="#">Home</a>
+        </li>
+        <li [class.display-block]="showList">
+            <a href="#">About</a>
+        </li>
+        <li [class.display-block]="showList">
+            <a href="#">Contact</a>
+        </li>
+    </ul>
 </nav>

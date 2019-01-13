@@ -1,5 +1,5 @@
 .display-block {
-    display: block;
+    display: block !important;
 }
 
 ul {
@@ -28,14 +28,25 @@ ul {
         }
     }
 
-    @media screen
-    and (min-width: 320px)
-    and (max-width: 640px) {
+    @media screen and (max-width: 748px) {
         justify-content: flex-end;
         flex-direction: column;
 
         li {
             display: none;
         }
+    }
+}
+
+@media screen
+and (min-width: 748px) {
+    .hamburger {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 748px) {
+    .hamburger {
+        display: block;
     }
 }

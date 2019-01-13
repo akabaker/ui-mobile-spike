@@ -8,6 +8,7 @@ import { HammerGestureConfig } from '@angular/platform-browser';
 })
 export class NavComponent implements OnInit {
     @ViewChild('navList') navList;
+    public showList = false;
 
     constructor() {
     }
@@ -16,6 +17,8 @@ export class NavComponent implements OnInit {
     }
 
     showNavigation() {
-        this.navList.nativeElement.style.display = "block";
+        // console.log(this.navList.nativeElement.children);
+        this.showList = !this.showList ? true : false;
+        console.log(this.showList);
     }
 }
