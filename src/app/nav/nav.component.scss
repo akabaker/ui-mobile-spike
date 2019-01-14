@@ -8,11 +8,6 @@ ul {
     display: flex;
     justify-content: flex-end;
 
-    a {
-        text-decoration: none;
-        color: #302d2d
-    }
-
     a:hover {
         border-bottom: 4px solid black;
     }
@@ -30,6 +25,13 @@ ul {
     li {
         padding-left: 5em;
     }
+
+    a {
+        text-decoration: none;
+        color: #302d2d;
+        font-size: 22px !important;
+    }
+
     li:last-child {
         padding-right: 5em;
     }
@@ -43,6 +45,11 @@ ul {
 
     ul {
         flex-direction: column;
+    }
+
+    a {
+        text-decoration: none;
+        color: #302d2d;
     }
 
     li {
