@@ -1,7 +1,7 @@
 <nav>
     <div class="nav-wrapper">
         <div class="logo">
-            <span>Ui Spike</span>
+            Ui Spike
         </div>
         <div class="hamburger push">
             <a href="javascript:void(0);" (click)="toggleMenu()">
@@ -9,15 +9,15 @@
             </a>
         </div>
     </div>
-    <ul>
+    <ul class="push">
         <li [class.display-block]="menuIsActive">
-            <a href="#">Home</a>
+            <a href="#">HOME</a>
         </li>
         <li [class.display-block]="menuIsActive">
-            <a href="#">About</a>
+            <a href="#">ABOUT</a>
         </li>
         <li [class.display-block]="menuIsActive">
-            <a href="#">Contact</a>
+            <a href="#">CONTACT</a>
         </li>
     </ul>
 </nav>
