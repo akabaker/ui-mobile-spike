@@ -15,7 +15,7 @@ nav {
 }
 
 ul {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -91,6 +91,7 @@ ul {
     li {
         display: none;
         font-size: 20px;
+        padding: 2px;
     }
 
     li:first-child {
