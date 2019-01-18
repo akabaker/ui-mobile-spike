@@ -1,20 +1,38 @@
-nav {
-    background-color: #ececec78;
-    padding: 20px 20px 0 0;
+.push {
+    margin-left: auto;
 }
 
 .display-block {
     display: block;
 }
 
+.nav-wrapper {
+    display: flex;
+    padding: 20px 20px 0 20px;
+}
+
+.logo {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    flex: 1 1 auto;
+}
+
+.fa-bars {
+    color: #8a8686;
+}
+
+nav {
+    background-color: #ececec78;
+}
+
 ul {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     list-style: none;
     display: flex;
     justify-content: flex-end;
 
     a:hover {
-        border-bottom: 4px solid black;
+        border-bottom: 2px solid #8c8888;
     }
 }
 
@@ -29,6 +47,7 @@ ul {
 
     li {
         padding-left: 5em;
+        font-size: 22px;
     }
 
     a {
@@ -43,11 +62,6 @@ ul {
 }
 
 @media screen and (max-width: 748px) {
-    .hamburger {
-        display: flex;
-        justify-content: flex-end;
-    }
-
     ul {
         flex-direction: column;
     }
@@ -65,8 +79,4 @@ ul {
     li:last-child {
         margin-bottom: 10px;
     }
-}
-
-.fa-bars {
-    color: #8a8686;
 }

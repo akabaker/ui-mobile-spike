@@ -1,8 +1,13 @@
 <nav>
-    <div class="hamburger">
-        <a href="javascript:void(0);" (click)="toggleMenu()">
-            <i class="fa fa-bars fa-2x"></i>
-        </a>
+    <div class="nav-wrapper">
+        <div class="logo">
+            <span>Heyyy</span>
+        </div>
+        <div class="hamburger push">
+            <a href="javascript:void(0);" (click)="toggleMenu()">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+        </div>
     </div>
     <ul>
         <li [class.display-block]="menuIsActive">
