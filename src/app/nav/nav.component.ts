@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { HammerGestureConfig } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-nav',
