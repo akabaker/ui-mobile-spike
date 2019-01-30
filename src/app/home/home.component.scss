@@ -1,4 +1,3 @@
-
 @media screen and (min-width: 748px) {
   .content-wrapper {
     display:flex;
@@ -12,8 +11,16 @@
     margin-left: 75px;
     max-width: 1000px;
   }
-}
 
+  .right-content-item {
+    padding: 0 25px 0 25px;
+    margin-bottom: 100px;
+  }
+
+  .left-content-item {
+    margin-top: 20px;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .left-content {
@@ -23,5 +30,19 @@
   .right-content {
     margin-left: 50px;
     max-width: 800px;
+  }
+
+  .right-content-item {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-content {
+    margin-bottom: 65px;
+  }
+
+  .right-content-item {
+    margin-bottom: 50px;
   }
 }
