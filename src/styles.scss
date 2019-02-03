@@ -22,5 +22,12 @@ p {
 }
 
 #wrapper {
-    margin: 10px;
+    margin: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #wrapper {
+        margin: 10px;
+    }
 }
