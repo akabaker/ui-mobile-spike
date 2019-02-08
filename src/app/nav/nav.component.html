@@ -3,20 +3,20 @@
         <div class="logo">
             <a class="logo" routerLink="/home">Ui Spike</a>
         </div>
-        <div class="hamburger push">
+        <div class="hamburger">
             <a eref="javascript:void(0);" (click)="toggleMenu()">
                 <i class="fa fa-bars fa-2x" [ngClass]="{'fa-bars': !menuIsActive, 'fa-times': menuIsActive}"></i>
             </a>
         </div>
     </div>
-    <ul class="push">
-        <li [class.display-block]="menuIsActive">
+    <ul [ngClass]="{'display-menu border-top': menuIsActive}">
+        <li >
             <a routerLink="/home" routerLinkActive="active">HOME</a>
         </li>
-        <li [class.display-block]="menuIsActive">
+        <li >
             <a routerLink="/about" routerLinkActive="active">ABOUT</a>
         </li>
-        <li [class.display-block]="menuIsActive">
+        <li >
             <a routerLink="/contact" routerLinkActive="active">CONTACT</a>
         </li>
     </ul>

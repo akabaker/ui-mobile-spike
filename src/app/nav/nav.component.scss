@@ -1,6 +1,12 @@
+.display-menu {
+    visibility: visible;
+    width: 100%;
+    height: 100px;
+    transition: height 0.05s ease-in;
+}
 
-.display-block {
-    display: block;
+.border-top {
+    border-top: 1px solid #e2dada;
 }
 
 .fa-bars {
@@ -13,13 +19,6 @@
 
 nav {
     background-color: #ececec78;
-}
-
-ul {
-    font-family: 'Roboto', sans-serif;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
 }
 
 @media screen and (min-width: 748px) {
@@ -38,6 +37,14 @@ ul {
 
     .hamburger {
         display: none;
+    }
+
+    ul {
+        margin-left: auto;
+        font-family: 'Roboto', sans-serif;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
     }
 
     li {
@@ -75,8 +82,12 @@ ul {
     }
 
     ul {
-        border-top: 1px solid #e2dada;
         flex-direction: column;
+        visibility: hidden;
+        height: 0px;
+        font-family: 'Roboto', sans-serif;
+        list-style: none;
+        transition: height 0.15s ease-out
     }
 
     a {
@@ -85,7 +96,6 @@ ul {
     }
 
     li {
-        display: none;
         font-size: 18px;
         padding: 2px;
     }
